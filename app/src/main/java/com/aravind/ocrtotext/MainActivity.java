@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
 
                 TextBlock textBlock = textBlockSparseArray.valueAt(i);
                 stringBuilder.append(textBlock.getValue());
-                //stringBuilder.append("/n");
+               
             }
             textview_data.setText(stringBuilder.toString());
             button_capture.setText("Retake");
@@ -116,4 +116,4 @@ public class MainActivity extends AppCompatActivity {
         clipboardManager.setPrimaryClip(clipData);
         Toast.makeText(MainActivity.this,"Copied to Clipboard",Toast.LENGTH_LONG).show();
     }
-}
+
